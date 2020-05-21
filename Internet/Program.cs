@@ -56,7 +56,7 @@ namespace Internet
 
                     Console.WriteLine("Status: " + response.Status + " " + "time taken: " + response.RoundtripTime);
                 }
-                catch (PingException)
+                catch (PigException)
                 {
                     await ReconnectAsync();
                 }
